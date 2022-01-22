@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Amialand service" />
+    <meta name="keywords" content="Amialand, Multichannel, Content, Service" />
+    <meta name="author" content="Nguyen Quynh Anh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/home/profil.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="service.css" />
+    <title>Amialand | Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-nav">
+        <div class="header-nav-img">
+          <div>
+            <img src="assets/home/profil.png" />
+          </div>
+          <div class="header-nav-img-text">Amialand</div>
+        </div>
+        <div class="header-nav-menu" class="header-nav-img">
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About </a>
+          <a href="service.html"> Service </a>
+          <a href="blog.html"> Blog </a>
+          <a href="contact.html"> Contact </a>
+        </div>
+        <div class="mobile-menu" class="header-nav-img">
+          <div class="sign-up">Sign up</div>
+          <div class="mobile-menu-icon" onclick="onShow()">
+            <img src="assets/icons/icon_menu.png" />
+          </div>
+        </div>
+      </div>
+      <div class="container header-nav-content">
+        <div class="header-menu-mobile">
+          <div class="header-menu-mobile__content">
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About </a>
+            <a href="service.html"> Service </a>
+            <a href="blog.html"> Blog </a>
+            <a href="contact.html"> Contact </a>
+            <a> Sign up </a>
+          </div>
+        </div>
+        <div
+          class="text-center header-nav-content__title"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        >
+          <span>AmiaLand</span> <span class="minus">-</span> Our Service
+        </div>
+        <div
+          class="text-white text-center header-nav-content__description"
+          data-aos="fade-up"
+          data-aos-duration="300"
+        >
+          Meet your customers where they are, across any channel.
+        </div>
+        <div class="header-nav-content__btn">
+          <div
+            class="header-nav-content__btn-get"
+            data-aos="fade-right"
+            data-aos-duration="300"
+          >
+            Get started
+          </div>
+          <div
+            class="header-nav-content__btn-try"
+            data-aos="fade-left"
+            data-aos-duration="300"
+          >
+            Try for free
+          </div>
+        </div>
+        <div class="header-img" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="assets/home/screen.png"
+            width="100%"
+            style="border-radius: 30px"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="service-banner-title">
+        Amialand was Built Specifically<br />for You
+      </div>
+      <div class="service-banner-content">
+        <div
+          class="service-banner-content-part"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          data-aos-offset="0"
+        >
+          <div class="service-banner-content-part-div">
+            <img
+              src="assets/home/mdi_alarm-light.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="service-banner-content-part__title">Creative</div>
+              <div class="mt-4 banner-content-part__description">
+                We’ll help you see how many more days you need to work to reach
+                your creative goal for the month and year.
+              </div>
+              <div class="mt-3 service-banner-content-part__learn">
+                Learn More
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="service-banner-content-part"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+          data-aos-offset="0"
+        >
+          <div class="service-banner-content-part-div__atom">
+            <img
+              src="assets/home/mdi_atom.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="service-banner-content-part__title">Sourcing</div>
+              <div class="mt-4 service-banner-content-part__description">
+                We’ll help you see how many more days you need to work to reach
+                your creative goal for the month and year.
+              </div>
+              <div class="mt-3 service-banner-content-part__learn text-white">
+                Learn More
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="service-banner-content-part"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          data-aos-offset="0"
+        >
+          <div class="service-banner-content-part-div">
+            <img
+              src="assets/icons/icon_collaborative.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="service-banner-content-part__title">Designing</div>
+              <div class="mt-4 banner-content-part__description">
+                We’ll help you see how many more days you need to work to reach
+                your creative goal for the month and year.
+              </div>
+              <div class="mt-3 service-banner-content-part__learn">
+                Learn More
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service-pricing">
+      <div class="service-pricing__container">
+        <div
+          class="service-pricing__container-title"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          data-aos-offset="0"
+        >
+          Simple Pricing for Your Team
+        </div>
+        <div
+          class="service-pricing__container-description"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          data-aos-offset="0"
+        >
+          Slate helps you see how many more days you need
+        </div>
+        <div class="service-pricing__container-content">
+          <div
+            class="service-pricing__container-part"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-offset="50"
+          >
+            <div class="service-pricing__container-part-title">Education</div>
+            <div class="service-pricing__container-part-description">
+              Brief price Description
+            </div>
+            <div
+              class="service-pricing__container-part-img"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <img src="assets/service/education.png" />
+            </div>
+            <div
+              class="service-pricing__container-part-price"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <div class="service-pricing__container-part-price-number">0</div>
+              <div>
+                <img src="assets/service/dola.png" />
+                <div style="font-size: 12px">Per/ month</div>
+              </div>
+            </div>
+            <div
+              class="service-pricing__container-part-list"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <ul>
+                <li>Only 2 Operators</li>
+                <li>Abandoned Cart</li>
+                <li>Facebook Ads</li>
+                <li>Order Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+            </div>
+            <div
+              class="service-pricing__container-part-button"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="0"
+            >
+              Order Now
+            </div>
+          </div>
+          <div
+            class="service-pricing__container-part"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-offset="50"
+          >
+            <div class="service-pricing__container-part-title">
+              Professional
+            </div>
+            <div class="service-pricing__container-part-description">
+              Brief price Description
+            </div>
+            <div
+              class="service-pricing__container-part-img"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <img src="assets/service/professional.png" />
+            </div>
+            <div
+              class="service-pricing__container-part-price"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <div class="service-pricing__container-part-price-number">10</div>
+              <div>
+                <img src="assets/service/dola.png" />
+                <div style="font-size: 12px">Per/ month</div>
+              </div>
+            </div>
+            <div
+              class="service-pricing__container-part-list"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <ul>
+                <li>5 Operators</li>
+                <li>Abandoned Cart</li>
+                <li>Facebook & Instagram Ads</li>
+                <li>Order Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+            </div>
+            <div
+              class="service-pricing__container-part-button"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="0"
+            >
+              Order Now
+            </div>
+          </div>
+          <div
+            class="service-pricing__container-part"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-offset="50"
+          >
+            <div class="service-pricing__container-part-title">Business</div>
+            <div class="service-pricing__container-part-description">
+              Brief price Description
+            </div>
+            <div
+              class="service-pricing__container-part-img"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <img src="assets/service/business.png" />
+            </div>
+            <div
+              class="service-pricing__container-part-price"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <div class="service-pricing__container-part-price-number">99</div>
+              <div>
+                <img src="assets/service/dola.png" />
+                <div style="font-size: 12px">Per/ month</div>
+              </div>
+            </div>
+            <div
+              class="service-pricing__container-part-list"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="50"
+            >
+              <ul>
+                <li>50 Operators</li>
+                <li>Abandoned Cart</li>
+                <li>All Ads</li>
+                <li>Order Notifications</li>
+                <li>Landing Pages</li>
+              </ul>
+            </div>
+            <div
+              class="service-pricing__container-part-button"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-offset="0"
+            >
+              Order Now
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service-about">
+      <div class="service-about__container">
+        <div
+          class="service-about__title"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          Happy Clients About Us
+        </div>
+        <div class="service-about__content">
+          <div
+            class="service-about__content-part"
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-offset="50"
+          >
+            <div class="service-about__content-part-img">
+              <img src="assets/service/quynh_anh.png" />
+            </div>
+            <div class="service-about__content-part-content">
+              <div class="service-about__content-part-content__title">
+                Quỳnh Anh
+              </div>
+              <div class="service-about__content-part-content__description">
+                <q
+                  >You made it so simple. My new site is so much faster and
+                  easier to work with than my old site.</q
+                >
+              </div>
+              <div
+                class="service-about__content-part-content__btn"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-offset="0"
+              >
+                <div class="service-about__content-part-content__btn-content">
+                  Learn More >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="service-about__content-part"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-offset="50"
+          >
+            <div class="service-about__content-part-img">
+              <img src="assets/service/tram_ngoc.png" />
+            </div>
+            <div class="service-about__content-part-content">
+              <div class="service-about__content-part-content__title">
+                Trâm Ngọc
+              </div>
+              <div class="service-about__content-part-content__description">
+                <q
+                  >You made it so simple. My new site is so much faster and
+                  easier to work with than my old site.</q
+                >
+              </div>
+              <div
+                class="service-about__content-part-content__btn"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-offset="0"
+              >
+                <div class="service-about__content-part-content__btn-content">
+                  Learn More >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="service-about__content-part"
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-offset="50"
+          >
+            <div class="service-about__content-part-img">
+              <img src="assets/service/trang_ng.png" />
+            </div>
+            <div class="service-about__content-part-content">
+              <div class="service-about__content-part-content__title">
+                Trang Ng
+              </div>
+              <div class="service-about__content-part-content__description">
+                <q
+                  >You made it so simple. My new site is so much faster and
+                  easier to work with than my old site.</q
+                >
+              </div>
+              <div
+                class="service-about__content-part-content__btn"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-offset="0"
+              >
+                <div class="service-about__content-part-content__btn-content">
+                  Learn More >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content row justify-content-between">
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="header-nav-img">
+            <img src="assets/home/profil.png" />
+            <div class="footer-nav-img-text">Amialand</div>
+          </div>
+          <div class="mt-5">
+            <div class="mt-3">
+              <img src="assets/home/app-gallery.jpg" />
+            </div>
+            <div class="mt-3">
+              <img src="assets/home/window-store.png" />
+            </div>
+            <div class="mt-3">
+              <img src="assets/home/store.jpg" />
+            </div>
+            <div class="mt-3">
+              <img src="assets/home/Group.png" width="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Product</div>
+          <div class="footer-list mt-5">
+            <ul>
+              <li>Landing page</li>
+              <li>Popup Builder</li>
+              <li>Web-design</li>
+              <li>Content</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Use Cases</div>
+          <div class="footer-list mt-5">
+            <ul>
+              <li>Web-designers</li>
+              <li>Marketers</li>
+              <li>Small Business</li>
+              <li>Website Builder</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Company</div>
+          <div class="footer-list mt-5">
+            <ul>
+              <li>About us</li>
+              <li>Carrers</li>
+              <li>FAQs</li>
+              <li>Teams</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Subscribe</div>
+          <div class="footer-subcribe mt-5">
+            <div class="footer-subcribe__text">
+              Subscribe to stay tuned for new web design and latest updates.
+              Let's do it!
+            </div>
+            <div class="footer-subcribe__input mt-4">
+              <input placeholder="Enter your email Address" />
+              <button>Subcribe</button>
+            </div>
+          </div>
+          <div class="footer-address">
+            <div>
+              <img src="assets/icons/icon_place.png" />
+            </div>
+            <div class="ml-4">
+              <address>Nguyen Huy Tuong Street</address>
+            </div>
+          </div>
+          <div class="footer-address">
+            <div>
+              <img src="assets/icons/icon_email.png" />
+            </div>
+            <div class="ml-4">
+              <a
+                href="mailto:amia103@gmail.com"
+                style="color: black; text-decoration: none"
+                >amia103@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-contact row justify-content-between">
+        <div
+          class="col-12 text-center col-md-4 mt-3"
+          style="font-size: 12px; margin: auto"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-offset="0"
+        >
+          Copyright 2021 Quynh Anh Nguyen All Rights Reserved
+        </div>
+        <div
+          class="col-10 col-md-3 mt-3"
+          style="padding: 0; margin: auto"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-offset="0"
+        >
+          <ul>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_tweeter.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_facebook.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_instagram.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_linked.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_youtube.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_telegram.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        easing: "slide",
+        disable: window.innerWidth < 1024,
+      });
+    </script>
+  </body>
+</html>

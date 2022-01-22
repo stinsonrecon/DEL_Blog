@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Amialand blog" />
+    <meta name="keywords" content="Amialand, Multichannel, Content, Blog" />
+    <meta name="author" content="Nguyen Quynh Anh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/home/profil.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="blog.css" />
+    <title>Amialand | Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-nav">
+        <div class="header-nav-img">
+          <div>
+            <img src="assets/home/profil.png" />
+          </div>
+          <div class="header-nav-img-text">Amialand</div>
+        </div>
+        <div class="header-nav-menu" class="header-nav-img">
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About </a>
+          <a href="service.html"> Service </a>
+          <a href="blog.html"> Blog </a>
+          <a href="contact.html"> Contact </a>
+        </div>
+        <div class="mobile-menu" class="header-nav-img">
+          <div class="sign-up">Sign up</div>
+          <div class="mobile-menu-icon" onclick="onShow()">
+            <img src="assets/icons/icon_menu.png" />
+          </div>
+        </div>
+      </div>
+      <div class="container header-nav-content">
+        <div class="header-menu-mobile">
+          <div class="header-menu-mobile__content">
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About </a>
+            <a href="service.html"> Service </a>
+            <a href="blog.html"> Blog </a>
+            <a href="contact.html"> Contact </a>
+            <a> Sign up </a>
+          </div>
+        </div>
+        <div
+          class="text-center header-nav-content__title"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        >
+          <span>AmiaLand</span> <span class="minus">-</span> Our blog
+        </div>
+        <div
+          class="text-white text-center header-nav-content__description"
+          data-aos="fade-up"
+          data-aos-duration="300"
+        >
+          Meet your customers where they are, across any channel.
+        </div>
+        <div class="header-nav-content__btn">
+          <div
+            class="header-nav-content__btn-get"
+            data-aos="fade-right"
+            data-aos-duration="300"
+          >
+            Get started
+          </div>
+          <div
+            class="header-nav-content__btn-try"
+            data-aos="fade-left"
+            data-aos-duration="300"
+          >
+            Try for free
+          </div>
+        </div>
+        <div class="header-img" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="assets/home/screen.png"
+            width="100%"
+            style="border-radius: 10px"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div
+        class="text-center banner-title"
+        data-aos="zoom-in"
+        data-aos-duration="300"
+      >
+        Our Latest News
+      </div>
+      <div class="banner-content">
+        <div class="banner-content-block">
+          <div
+            class="banner-content-part"
+            data-aos="zoom-in"
+            data-aos-duration="300"
+            data-aos-offset="0"
+          >
+            <img
+              src="assets/home/mdi_alarm-light.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="banner-content-part__title">Creative</div>
+              <div class="mt-4 banner-content-part__description">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+              <div class="mt-3 banner-content-part__learn">Learn More</div>
+            </div>
+          </div>
+          <div
+            class="banner-content-part__atom"
+            data-aos="zoom-in"
+            data-aos-duration="600"
+            data-aos-offset="0"
+          >
+            <img
+              src="assets/home/mdi_atom.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="banner-content-part__title text-white">
+                Social Media
+              </div>
+              <div class="mt-4 banner-content-part__description text-white">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+              <div class="mt-3 banner-content-part__learn text-white">
+                Learn More
+              </div>
+            </div>
+          </div>
+          <div class="banner-content-part__search">
+            <div
+              class="banner-content-search"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-offset="0"
+            >
+              Search
+            </div>
+            <div class="banner-content-block-part mt-5">
+              <div
+                class="banner-content-block-part-title"
+                data-aos="fade-right"
+                data-aos-duration="300"
+                data-aos-offset="0"
+              >
+                Categories
+              </div>
+              <ul>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="300"
+                  data-aos-offset="0"
+                >
+                  <div>Landing Page</div>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="300"
+                  data-aos-offset="0"
+                >
+                  <div>Popup Builder</div>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="300"
+                  data-aos-offset="0"
+                >
+                  <div>Integrations</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="banner-content-block-part-title-news"
+          data-aos="fade-right"
+          data-aos-duration="300"
+          data-aos-offset="100"
+        >
+          <div class="banner-content-block-part-title-news__side">
+            <div>Related News</div>
+          </div>
+        </div>
+        <div class="banner-content-block">
+          <div
+            class="banner-content-part"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            <img
+              src="assets/home/mdi_alarm-light.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="banner-content-part__title">Sourcing</div>
+              <div class="mt-4 banner-content-part__description">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+              <div class="mt-3 banner-content-part__learn">Learn More</div>
+            </div>
+          </div>
+          <div
+            class="banner-content-part__atom"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            <img
+              src="assets/home/mdi_atom.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="banner-content-part__title text-white">
+                E-Commerce
+              </div>
+              <div class="mt-4 banner-content-part__description text-white">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+              <div class="mt-3 banner-content-part__learn text-white">
+                Learn More
+              </div>
+            </div>
+          </div>
+          <div class="banner-content-block-part-title-news__part">
+            <div class="banner-content-block-part-title-news__part-div">
+              <div
+                class="banner-content-block-part-title-news__part-div__post"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-offset="20"
+              >
+                <div
+                  class="banner-content-block-part-title-news__part-div__post-img"
+                >
+                  <img
+                    src="assets/home/IMG_1469.JPG"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div
+                  class="banner-content-block-part-title-news__part-div__post-description"
+                >
+                  <span>AmiaLand</span> gains 4,000 clients.
+                </div>
+              </div>
+              <div
+                class="banner-content-block-part-title-news__part-div__post"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-offset="20"
+              >
+                <div
+                  class="banner-content-block-part-title-news__part-div__post-img"
+                >
+                  <img
+                    src="assets/home/IMG_1753.png"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div
+                  class="banner-content-block-part-title-news__part-div__post-description"
+                >
+                  <span>AmiaLand</span> reach 10,000 followers.
+                </div>
+              </div>
+              <div
+                class="banner-content-block-part-title-news__part-div__post"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-offset="20"
+              >
+                <div
+                  class="banner-content-block-part-title-news__part-div__post-img"
+                >
+                  <img
+                    src="assets/home/iamge_new3.jpg"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div
+                  class="banner-content-block-part-title-news__part-div__post-description"
+                >
+                  <span>AmiaLand</span> collabs with Pepsico.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-content-block" style="margin-top: 80px">
+          <div
+            class="banner-content-part"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            <img
+              src="assets/home/mdi_alarm-light.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="banner-content-part__title">Designing</div>
+              <div class="mt-4 banner-content-part__description">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+              <div class="mt-3 banner-content-part__learn">Learn More</div>
+            </div>
+          </div>
+          <div
+            class="banner-content-part__atom"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            <img
+              src="assets/home/mdi_atom.png"
+              style="width: 50px; height: 75px"
+            />
+            <div class="p-2">
+              <div class="banner-content-part__title text-white">Branding</div>
+              <div class="mt-4 banner-content-part__description text-white">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </div>
+              <div class="mt-3 banner-content-part__learn text-white">
+                Learn More
+              </div>
+            </div>
+          </div>
+          <div class="banner-content-block-part-tags">
+            <div class="banner-content-block-part-tags__part">
+              <div
+                class="banner-content-block-part-tags__part__title"
+                data-aos="fade-down"
+                data-aos-duration="500"
+                data-aos-offset="0"
+              >
+                Popular Tags
+              </div>
+              <div class="tags">
+                <div
+                  class="tags-part mt-4"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-offset="0"
+                >
+                  <div>
+                    <a href="https://copyblogger.com/?s=design">Design</a>
+                  </div>
+                </div>
+                <div
+                  class="tags-part mt-4"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  data-aos-offset="0"
+                >
+                  <div>
+                    <a href="https://copyblogger.com/?s=content">Content</a>
+                  </div>
+                </div>
+                <div
+                  class="tags-part mt-4"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-offset="0"
+                >
+                  <div>
+                    <a href="https://copyblogger.com/?s=popup">Popup</a>
+                  </div>
+                </div>
+                <div
+                  class="tags-part mt-4"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  data-aos-offset="0"
+                >
+                  <div>
+                    <a href="https://copyblogger.com/?s=markets">Markets</a>
+                  </div>
+                </div>
+                <div
+                  class="tags-part mt-4"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-offset="0"
+                >
+                  <div>
+                    <a href="https://copyblogger.com/?s=business">Business</a>
+                  </div>
+                </div>
+                <div
+                  class="tags-part mt-4"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  data-aos-offset="0"
+                >
+                  <div>
+                    <a href="https://copyblogger.com/?s=website">Website</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div
+            class="pagination-active"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            1
+          </div>
+          <div
+            class="pagination-inactive"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            2
+          </div>
+          <div
+            class="pagination-inactive"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            3
+          </div>
+          <div
+            class="pagination-next"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-offset="0"
+          >
+            Next <span>></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="video-content">
+        <div
+          class="video-title"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-offset="100"
+        >
+          Want to<br />see more ?
+        </div>
+        <!-- Gallery -->
+        <div class="row" style="padding-top: 3rem;">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="assets/blog/hpb_DEL.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+              style="border-radius: 40px;
+                    cursor: pointer;
+                    color: #9749e5;
+                    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.15);"
+            />
+
+            <img
+              src="assets/blog/del_sky.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Wintry Mountain Landscape"
+              style="border-radius: 40px;
+                    cursor: pointer;
+                    color: #9749e5;
+                    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.15);"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="assets/blog/del_candle.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Mountains in the Clouds"
+              style="border-radius: 40px;
+                    cursor: pointer;
+                    color: #9749e5;
+                    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.15);"
+            />
+
+            <img
+              src="assets/blog/del_group_pic_HANU.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+              style="border-radius: 40px;
+                    cursor: pointer;
+                    color: #9749e5;
+                    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.15);"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="assets/blog/del_group.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Waves at Sea"
+              style="border-radius: 40px;
+                    cursor: pointer;
+                    color: #9749e5;
+                    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.15);"
+            />
+
+            <img
+              src="assets/blog/del_interview.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Yosemite National Park"
+              style="border-radius: 40px;
+                    cursor: pointer;
+                    color: #9749e5;
+                    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.15);"
+            />
+          </div>
+        </div>
+        <!-- Gallery -->
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content row justify-content-between">
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="header-nav-img">
+            <img src="assets/home/profil.png" />
+            <div class="footer-nav-img-text">Amialand</div>
+          </div>
+          <div class="mt-5">
+            <div class="mt-3">
+              <img src="assets/home/app-gallery.jpg" />
+            </div>
+            <div class="mt-3">
+              <img src="assets/home/window-store.png" />
+            </div>
+            <div class="mt-3">
+              <img src="assets/home/store.jpg" />
+            </div>
+            <div class="mt-3">
+              <img src="assets/home/Group.png" width="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Product</div>
+          <div class="footer-list mt-5">
+            <ul>
+              <li>Landing page</li>
+              <li>Popup Builder</li>
+              <li>Web-design</li>
+              <li>Content</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Use Cases</div>
+          <div class="footer-list mt-5">
+            <ul>
+              <li>Web-designers</li>
+              <li>Marketers</li>
+              <li>Small Business</li>
+              <li>Website Builder</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-6 col-md-2"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Company</div>
+          <div class="footer-list mt-5">
+            <ul>
+              <li>About us</li>
+              <li>Carrers</li>
+              <li>FAQs</li>
+              <li>Teams</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-offset="50"
+        >
+          <div class="footer-product">Subscribe</div>
+          <div class="footer-subcribe mt-5">
+            <div class="footer-subcribe__text">
+              Subscribe to stay tuned for new web design and latest updates.
+              Let's do it!
+            </div>
+            <div class="footer-subcribe__input mt-4">
+              <input placeholder="Enter your email Address" />
+              <button>Subcribe</button>
+            </div>
+          </div>
+          <div class="footer-address">
+            <div>
+              <img src="assets/icons/icon_place.png" />
+            </div>
+            <div class="ml-4">
+              <address>Nguyen Huy Tuong Street</address>
+            </div>
+          </div>
+          <div class="footer-address">
+            <div>
+              <img src="assets/icons/icon_email.png" />
+            </div>
+            <div class="ml-4">
+              <a
+                href="mailto:amia103@gmail.com"
+                style="color: black; text-decoration: none"
+                >amia103@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-contact row justify-content-between">
+        <div
+          class="col-12 text-center col-md-4 mt-3"
+          style="font-size: 12px; margin: auto"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-offset="0"
+        >
+          Copyright 2021 Quynh Anh Nguyen All Rights Reserved
+        </div>
+        <div
+          class="col-10 col-md-3 mt-3"
+          style="padding: 0; margin: auto"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-offset="0"
+        >
+          <ul>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_tweeter.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_facebook.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_instagram.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_linked.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_youtube.png" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/icon_social_telegram.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        easing: "slide",
+        disable: window.innerWidth < 1024,
+      });
+    </script>
+  </body>
+</html>
